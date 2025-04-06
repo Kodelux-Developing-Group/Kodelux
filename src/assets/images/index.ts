@@ -1,0 +1,1 @@
+export { default as Escultura } from "./Escultura.png"

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend:wght@100..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'Mechsuit';
+    src: url('/fonts/Mechsuit.woff2') format('woff2'),
+        url('/fonts/Mechsuit.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HypikRegular';
+    src: url('/fonts/HypikRegular.woff2') format('woff2'),
+        url('/fonts/HypikRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: "Lexend", sans-serif;
+    min-height: 100%;
+    margin: 0;
+}
