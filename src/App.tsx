@@ -1,11 +1,17 @@
 import "./App.css";
-import { Button } from "./components/ui/button";
+import Layout from "./Layout";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { LandingPage } from "./pages/landing";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button>Click me</Button>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<LandingPage />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
