@@ -1,4 +1,4 @@
-import { MoonIcon, SunIcon, Logo } from "@/assets/icons/icons";
+import { MoonIcon, SunIcon } from "@/assets/icons/icons";
 import { useTheme } from "@/hooks";
 import { OffCanvas } from "../widget";
 
@@ -14,13 +14,7 @@ export const Navbar = () => {
           backdropFilter: "blur(10px)",
         }}
       >
-        <div className="hidden lg:flex items-center justify-between w-full">
-          <figure data-test-id="logo">
-            <Logo
-              className="size-12"
-              fill={theme === "light" ? "#000" : "#fff"}
-            />
-          </figure>
+        <div className="hidden lg:flex items-center justify-end w-full">
           <div className="px-4">
             <ul className="flex space-x-8 font-semibold text-xs items-center">
               <li>
@@ -45,7 +39,7 @@ export const Navbar = () => {
             </ul>
           </div>
         </div>
-        <OffCanvas theme={theme} />
+        <OffCanvas />
       </nav>
     </header>
   );

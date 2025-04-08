@@ -1,16 +1,22 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { themeStore } from "@/store/store";
 
 export const useTheme = () => {
-  const [theme, setTheme] = useState<"light" | "dark">(() => {
-    if (
-      typeof window !== "undefined" &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      return "dark";
-    }
-    return "light";
-  });
+  const { theme, setTheme } = themeStore();
 
+  // Verificamos el esquema preferido y establecemos el estado inicial
+  useEffect(() => {
+    const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+    
+    // Solo actualizamos si el tema no está definido aún
+    if (theme === "light" || theme === "dark") return;
+
+    setTheme(preferredTheme);
+  }, [theme, setTheme]);
+
+  // Efecto para cambiar el tema en el HTML
   useEffect(() => {
     const html = document.querySelector("html");
     if (!html) return;
@@ -23,7 +29,7 @@ export const useTheme = () => {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   return { theme, toggleTheme };
