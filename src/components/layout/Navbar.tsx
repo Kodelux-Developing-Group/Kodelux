@@ -1,4 +1,4 @@
-import styles from './styles/navbar.moduel.css'
+import styles from "./styles/navbar.module.css"
 
 export const Navbar = () => {
 
