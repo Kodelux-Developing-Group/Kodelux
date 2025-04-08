@@ -1,19 +1,5 @@
 .title {
-  font-family: 'HypikRegular', sans-serif;
-  -webkit-text-stroke: 1.25px var(--stroke-color);
-  color: transparent;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-  
-}
-
-.subtitle {
-  font-family: 'Mechsuit', sans-serif;
-}
-
-.stats {
-  font-family: "Big Shoulders", sans-serif;
+  font-family: "Julius Sans One", sans-serif;
 }
 
 @keyframes levitate {
