@@ -14,7 +14,7 @@ export const CardMember = ({ username, branch, children }: MemberProps) => {
   );
 };
 
-/* Uso
+/* Use
 <CardMemeber username="Mr.Cube" branch="Full-Stack Developer">
           <NodeJSIcon className="w-12"/>
                 <ReactIcon className="w-12"/>

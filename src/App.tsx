@@ -1,7 +1,7 @@
 import "./App.css";
 import Layout from "./Layout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { LandingPage } from "./pages/landing";
+import { LandingPage } from "./pages/landing/LandingPage";
 
 function App() {
   return (
