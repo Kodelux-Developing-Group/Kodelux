@@ -1,6 +1,7 @@
-import { EmailIcon, InstagramIcon } from "@/assets/icons/icons"
+import { EmailIcon, InstagramIcon, NodeJSIcon } from "@/assets/icons/icons"
 import styles from "../../components/layout/styles/navbar.module.css"
 import ScrollToTop from '../../components/common/ScrollToTop'
+import { ProjectCard } from "@/components/common/ProjectCard"
 
 
 export const LandingPage = () => {
@@ -17,10 +18,18 @@ export const LandingPage = () => {
     </div>
     <div id="projects" className="h-screen bg-amber-900 flex items-center justify-center">
       <div className="h-8/12 w-full shadow-2xl shadow-black bg-amber-300 flex items-center justify-center">
+        <ProjectCard name="aaaa" imageUrl="src\assets\images\Escultura.png" link="">
+          <NodeJSIcon></NodeJSIcon>
+          <NodeJSIcon></NodeJSIcon>
+          <NodeJSIcon></NodeJSIcon>
+          <NodeJSIcon></NodeJSIcon>
+          <NodeJSIcon></NodeJSIcon>
+          <NodeJSIcon></NodeJSIcon>
+          <NodeJSIcon></NodeJSIcon>
+        </ProjectCard>
       </div>
     </div>
     <div className="bg-red-400 h-screen">
-
     </div>
     <ScrollToTop/>
     <footer id="contact" className="w-screen ">
