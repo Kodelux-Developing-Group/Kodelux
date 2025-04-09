@@ -11,10 +11,12 @@ export default function ProjectsScrollX ({ children } : ProjectsScrollXProp) {
     const childrenArray = React.Children.toArray(children)
     const totalPages = childrenArray.length
     const carouselRef = useRef(null)
+
+    const move = 100 / childrenArray.length
     
     useEffect(() => {
         if (carouselRef.current) {
-            carouselRef.current.style.transform = `translateX(-${currentPage * 25}%)`
+            carouselRef.current.style.transform = `translateX(-${currentPage * move}%)`
         }
     }, [currentPage])
 
@@ -31,7 +33,7 @@ export default function ProjectsScrollX ({ children } : ProjectsScrollXProp) {
             </div>
             
             <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-2 pb-4">
-                {childrenArray.map((_, idx) => (
+                {childrenArray.length >= 2 && childrenArray.map((_, idx) => (
                     <button key={idx} onClick={() => setCurrentPage(idx)} 
                         className={`h-2 rounded-full transition-all ${currentPage === idx ? 'w-6 bg-[#2C2C2C]' : 'w-2 bg-[#2C2C2C]/50'}`}/>
                 ))}

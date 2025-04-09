@@ -18,75 +18,25 @@ export const LandingPage = () => {
 
       </div>
     </div>
-    <div id="projects" className="h-screen w-screen flex items-center justify-center" >
-      <div className="h-8/12 flex items-center select-none relative px-16" style={{ boxShadow: '0 0 80px rgba(0,0,0,0.5)'}}>
-        <ProjectsScrollX>
-          <div className="flex flex-row justify-center items-center gap-4">
-            <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="https://www.google.com">
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-            </ProjectCard>
-            <ProjectCard name="Sample Text" imageUrl="" link="">
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-            </ProjectCard>
-            <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-            </ProjectCard>
-          </div>
-          <div className="flex flex-row justify-center items-center gap-4">
-            <ProjectCard name="Sample Text" imageUrl="" link="">
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-            </ProjectCard>
-            <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-            </ProjectCard>
-            <ProjectCard name="Sample Text" imageUrl="" link="">
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-            </ProjectCard>
-          </div>
-          <div className="flex flex-row justify-center items-center gap-4">
-            <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-            </ProjectCard>
-            <ProjectCard name="Sample Text" imageUrl="" link="">
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-            </ProjectCard>
-            <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-            </ProjectCard>
-          </div>
-          <div className="flex flex-row justify-center items-center gap-4">
-            <ProjectCard name="Sample Text" imageUrl="" link="">
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-            </ProjectCard>
-            <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-              <NodeJSIcon/>
-            </ProjectCard>
-          </div>
-        </ProjectsScrollX>
+    <div className="w-1 h-[18rem]"></div>
+    <div id="projects" className="h-screen w-screen flex flex-col items-center justify-center relative">
+      <h2 className={`text-7xl mx-auto text-black ${styles.julius} stroke-text`}>Projects</h2>
+      <div className="w-9/12 h-1 bg-gradient-to-r from-transparent via-[#ffd700] to-transparent my-4 rounded-full"/>
+        <div className="h-8/12 min-w-screen flex items-center select-none relative px-16" >
+          <ProjectsScrollX>
+            <div className="flex flex-row justify-center items-center gap-4">
+              <ProjectCard imageUrl="" link="https://www.google.com">
+              </ProjectCard>
+              <ProjectCard imageUrl="" link="https://www.google.com">
+              </ProjectCard>
+              <ProjectCard imageUrl="" link="https://www.google.com">
+              </ProjectCard>
+            </div>
+          </ProjectsScrollX>
+        </div>
+        <div className="w-9/12 h-1 bg-gradient-to-r from-transparent via-[#ffd700] to-transparent my-4 rounded-full"/>
       </div>
-    </div>
+      <div className="w-1 h-28"/>
     <div className=" h-screen flex flex-col items-center gap-6 justify-center mb-96">
       <div className="flex gap-10">
       <CardMember username="Joe" branch="Full-Stack Developer">
@@ -114,7 +64,7 @@ export const LandingPage = () => {
         <ViteIcon className="w-12 h-12"/>
         <ExpressIcon className="w-12 h-12"/>
       </CardMember>
-      <CardMember username="Mr.Cube" branch="Full-Stack Developer">
+      <CardMember username="Cube" branch="Full-Stack Developer">
         <NodeJSIcon className="w-12 h-14"/>
         <TypescriptIcon className="w-12 h-12"/>
         <ReactIcon className="w-12 h-12"/>
@@ -128,13 +78,13 @@ export const LandingPage = () => {
       <div className="flex gap-18">
         <CardMember username="Mortem" branch="Full-Stack Developer">
           <NodeJSIcon className="w-12 h-14"/>
-          <DotNetIcon className="w-12 h-4 mt-6"/>
           <MySQLIcon className="w-24 h-12"/>
           <PostgreSQLIcon className="w-12 h-16"/>
           <TailWindCSSIcon className="w-12"/>
           <ReactIcon className="w-12 h-12"/>
           <BootstrapIcon className="w-12 h-12"/>
           <SQLServerIcon className="w-12 h-12"/>
+          <DotNetIcon className="w-12 h-4 mt-6"/>
         </CardMember>
         <CardMember username="Tomy" branch="">
         </CardMember>
@@ -143,14 +93,17 @@ export const LandingPage = () => {
         </CardMember>
       </div>
     </div>
-    <div className="h-80"></div>
+    <div className="h-96"></div>
+    <div className="h-10"></div>
     <ScrollToTop/>
     <footer id="contact" className="w-screen">
       <div className="flex flex-row gap-x-16 justify-end mr-28 mb-20">
-        <a href={`mailto:kodelux.ofc@gmail.com`} className="">
+        <a href={`mailto:kodelux.ofc@gmail.com`} rel="noopener noreferrer">
           <EmailIcon className="w-14"></EmailIcon>
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/kodelux_team/"
+          target="_blank"
+          rel="noopener noreferrer">
           <InstagramIcon className="w-14"/>
         </a>
       </div>

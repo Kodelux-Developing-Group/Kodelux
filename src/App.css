@@ -19,4 +19,12 @@ body {
 
 html {
     scroll-behavior: smooth;
-  }
+}
+
+.stroke-text {
+    -webkit-text-stroke: 1px #c7a900; /* Borde de las letras */
+ }
+
+::-webkit-scrollbar {
+    width: 0;
+}
