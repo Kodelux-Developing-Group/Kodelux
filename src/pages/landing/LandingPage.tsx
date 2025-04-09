@@ -18,65 +18,72 @@ export const LandingPage = () => {
 
       </div>
     </div>
-    <div id="projects" className="h-screen bg-amber-900 flex items-center justify-center">
-      <div className="h-8/12 w-full shadow-2xl shadow-black bg-amber-300 flex items-center justify-center select-none relative">
+    <div id="projects" className="h-screen w-screen flex items-center justify-center" >
+      <div className="h-8/12 flex items-center select-none relative px-16" style={{ boxShadow: '0 0 80px rgba(0,0,0,0.5)'}}>
         <ProjectsScrollX>
-          <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="https://www.google.com">
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-          </ProjectCard>
-          <ProjectCard name="Sample Text" imageUrl="" link="">
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-          </ProjectCard>
-          <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-          </ProjectCard>
-          <ProjectCard name="Sample Text" imageUrl="" link="">
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-          </ProjectCard>
-          <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-          </ProjectCard>
-          <ProjectCard name="Sample Text" imageUrl="" link="">
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-          </ProjectCard>
-          <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-          </ProjectCard>
-          <ProjectCard name="Sample Text" imageUrl="" link="">
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-          </ProjectCard>
-          <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-          </ProjectCard>
-          <ProjectCard name="Sample Text" imageUrl="" link="">
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-          </ProjectCard>
-          <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-            <NodeJSIcon/>
-          </ProjectCard>
-
+          <div className="flex flex-row justify-center items-center gap-4">
+            <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="https://www.google.com">
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+            </ProjectCard>
+            <ProjectCard name="Sample Text" imageUrl="" link="">
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+            </ProjectCard>
+            <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+            </ProjectCard>
+          </div>
+          <div className="flex flex-row justify-center items-center gap-4">
+            <ProjectCard name="Sample Text" imageUrl="" link="">
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+            </ProjectCard>
+            <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+            </ProjectCard>
+            <ProjectCard name="Sample Text" imageUrl="" link="">
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+            </ProjectCard>
+          </div>
+          <div className="flex flex-row justify-center items-center gap-4">
+            <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+            </ProjectCard>
+            <ProjectCard name="Sample Text" imageUrl="" link="">
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+            </ProjectCard>
+            <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+            </ProjectCard>
+          </div>
+          <div className="flex flex-row justify-center items-center gap-4">
+            <ProjectCard name="Sample Text" imageUrl="" link="">
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+            </ProjectCard>
+            <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+              <NodeJSIcon/>
+            </ProjectCard>
+          </div>
         </ProjectsScrollX>
       </div>
     </div>
@@ -109,24 +116,24 @@ export const LandingPage = () => {
       </CardMember>
       <CardMember username="Mr.Cube" branch="Full-Stack Developer">
         <NodeJSIcon className="w-12 h-14"/>
+        <TypescriptIcon className="w-12 h-12"/>
         <ReactIcon className="w-12 h-12"/>
         <ViteIcon className="w-12 h-12"/>
         <TailWindCSSIcon className="w-12"/>
         <MySQLIcon className="w-24 h-12"/>
         <PostgreSQLIcon className="w-12 h-16"/>
         <ExpressIcon className="w-12 h-12"/>
-        <TypescriptIcon className="w-12 h-12"/>
       </CardMember>
       </div>
       <div className="flex gap-18">
         <CardMember username="Mortem" branch="Full-Stack Developer">
+          <NodeJSIcon className="w-12 h-14"/>
           <DotNetIcon className="w-12 h-4 mt-6"/>
           <MySQLIcon className="w-24 h-12"/>
           <PostgreSQLIcon className="w-12 h-16"/>
           <TailWindCSSIcon className="w-12"/>
           <ReactIcon className="w-12 h-12"/>
           <BootstrapIcon className="w-12 h-12"/>
-          <NodeJSIcon className="w-12 h-14"/>
           <SQLServerIcon className="w-12 h-12"/>
         </CardMember>
         <CardMember username="Tomy" branch="">

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import React from 'react'
 
 interface ProjectsScrollXProp {
@@ -6,65 +6,36 @@ interface ProjectsScrollXProp {
     children?: React.ReactNode
 }
 
-const PROJECTCARDS_PER_PAGE = 3
-
 export default function ProjectsScrollX ({ children } : ProjectsScrollXProp) {
-    const [currentPage, setCurrentPage] = useState(1)
+    const [currentPage, setCurrentPage] = useState(0)
     const childrenArray = React.Children.toArray(children)
-    const totalPages = Math.ceil(childrenArray.length / PROJECTCARDS_PER_PAGE)
-    const currentItems = childrenArray.slice((currentPage - 1) * PROJECTCARDS_PER_PAGE, currentPage * PROJECTCARDS_PER_PAGE)
-
-    const pages = []
-    for (let i = 0; i < childrenArray.length; i += 3) {
-        pages.push(childrenArray.slice(i, i + 3))
-      }
+    const totalPages = childrenArray.length
+    const carouselRef = useRef(null)
+    
+    useEffect(() => {
+        if (carouselRef.current) {
+            carouselRef.current.style.transform = `translateX(-${currentPage * 25}%)`
+        }
+    }, [currentPage])
 
     return (
-        <>
-            {currentPage > 1 && (
-                <div className="z-10 absolute left-0 m-8">
-                    <button disabled={currentPage === 1} className="text-[#2C2C2C] w-fit h-fit text-4xl cursor-pointer"
-                    onClick={() => setCurrentPage(currentPage - 1)}>
-                        ←
-                    </button>
-                </div>
-                )}
-        {currentItems.map((item, i) => (
-            <div key={i} className='mx-8'>
-                {item}
+        <div className="relative w-full overflow-hidden">
+            <div ref={carouselRef}
+                className="flex transition-transform duration-500 ease-in-out" style={{ width: `${totalPages * 100}%` }}>
+
+                {childrenArray.map((page, index) => (
+                    <div key={index} className="w-full flex-shrink-0 flex justify-center" style={{ width: `${100 / totalPages}%` }}>
+                        {page}
+                    </div>
+                ))}
             </div>
-        ))}
-        {((childrenArray.length >= PROJECTCARDS_PER_PAGE + 1) && currentPage < totalPages) && (
-            <div className="z-10 absolute right-0 m-8">
-                <button disabled={currentPage === totalPages} className="text-[#2C2C2C] w-fit h-fit text-4xl cursor-pointer"
-                onClick={() => setCurrentPage(currentPage + 1)}>
-                    →
-                </button>
+            
+            <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-2 pb-4">
+                {childrenArray.map((_, idx) => (
+                    <button key={idx} onClick={() => setCurrentPage(idx)} 
+                        className={`h-2 rounded-full transition-all ${currentPage === idx ? 'w-6 bg-[#2C2C2C]' : 'w-2 bg-[#2C2C2C]/50'}`}/>
+                ))}
             </div>
-            )}
-        </>
+        </div>
     )
 }
-
-
-  
-//       {/* Contenedor del carrusel con overflow hidden */}
-//       <div className=" mx-16"> {/* Margen para las flechas */}
-//         <div
-//           className="flex transition-transform duration-500 ease-in-out"
-//           style={{
-//             transform: `translateX(-${currentPage * 100}%)`,
-//             width: `${totalPages * 100}%`
-//           }}
-//         >
-//           {pages.map((pageItems, pageIndex) => (
-//             <div 
-//               key={pageIndex} 
-//               className="flex-shrink-0 flex justify-center items-center gap-8"
-//               style={{ width: `${100 / totalPages}%` }}
-//             >
-//               {pageItems}
-//             </div>
-//           ))}
-//         </div>
-//       </div>
