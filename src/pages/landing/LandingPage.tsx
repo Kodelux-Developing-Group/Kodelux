@@ -1,4 +1,4 @@
-import { DartIcon, EmailIcon, ExpressIcon, FlutterIcon, InstagramIcon, MySQLIcon, NestJSIcon, NodeJSIcon, PostgreSQLIcon, ReactIcon, TailWindCSSIcon, TypescriptIcon, ViteIcon } from "@/assets/icons/icons"
+import { BootstrapIcon, DartIcon, DotNetIcon, EmailIcon, ExpressIcon, FlutterIcon, InstagramIcon, MySQLIcon, NestJSIcon, NodeJSIcon, PostgreSQLIcon, ReactIcon, SQLServerIcon, TailWindCSSIcon, TypescriptIcon, ViteIcon } from "@/assets/icons/icons"
 import styles from "../../components/layout/styles/navbar.module.css"
 import ScrollToTop from '../../components/common/ScrollToTop'
 import { ProjectCard } from "@/components/common/ProjectCard"
@@ -19,7 +19,7 @@ export const LandingPage = () => {
     </div>
     <div id="projects" className="h-screen bg-amber-900 flex items-center justify-center">
       <div className="h-8/12 w-full shadow-2xl shadow-black bg-amber-300 flex items-center justify-center">
-        <ProjectCard name="aaaa" imageUrl="src\assets\images\Escultura.png" link="">
+        <ProjectCard name="Sample Text" imageUrl="src\assets\images\Escultura.png" link="">
           <NodeJSIcon></NodeJSIcon>
           <NodeJSIcon></NodeJSIcon>
           <NodeJSIcon></NodeJSIcon>
@@ -30,11 +30,11 @@ export const LandingPage = () => {
         </ProjectCard>
       </div>
     </div>
-    <div className="bg-red-400 h-screen flex flex-col items-center gap-6 justify-center mb-96">
+    <div className=" h-screen flex flex-col items-center gap-6 justify-center mb-96">
       <div className="flex gap-10">
       <CardMember username="Joe" branch="Full-Stack Developer">
         <NodeJSIcon className="w-12 h-14"/>
-        <TypescriptIcon className="w-12"/>
+        <TypescriptIcon className="w-12 h-12"/>
         <ReactIcon className="w-12 h-12"/>
         <ViteIcon className="w-12 h-12"/>
         <TailWindCSSIcon className="w-12"/>
@@ -44,14 +44,14 @@ export const LandingPage = () => {
       </CardMember>
       <CardMember username="Méndez" branch="Back-end Developer">
         <NodeJSIcon className="w-12 h-14"/>
-        <TypescriptIcon className="w-12"/>
+        <TypescriptIcon className="w-12 h-12"/>
         <NestJSIcon className="w-12 h-12"/>
         <DartIcon className="w-12 h-12"/>
         <FlutterIcon className="w-12 h-12"/>
       </CardMember>
       <CardMember username="Melo" branch="Back-end Developer">
         <NodeJSIcon className="w-12 h-14"/>
-        <TypescriptIcon className="w-12"/>
+        <TypescriptIcon className="w-12 h-12"/>
         <NestJSIcon className="w-12 h-12"/>
         <ReactIcon className="w-12 h-12"/>
         <ViteIcon className="w-12 h-12"/>
@@ -65,15 +65,25 @@ export const LandingPage = () => {
         <MySQLIcon className="w-24 h-12"/>
         <PostgreSQLIcon className="w-12 h-16"/>
         <ExpressIcon className="w-12 h-12"/>
-        <TypescriptIcon className="w-12"/>
+        <TypescriptIcon className="w-12 h-12"/>
       </CardMember>
       </div>
       <div className="flex gap-18">
         <CardMember username="Mortem" branch="Full-Stack Developer">
+          <DotNetIcon className="w-12 h-4 mt-6"/>
+          <MySQLIcon className="w-24 h-12"/>
+          <PostgreSQLIcon className="w-12 h-16"/>
+          <TailWindCSSIcon className="w-12"/>
+          <ReactIcon className="w-12 h-12"/>
+          <BootstrapIcon className="w-12 h-12"/>
+          <TailWindCSSIcon className="w-12"/>
+          <NodeJSIcon className="w-12 h-14"/>
+          <SQLServerIcon className="w-12 h-12"/>
         </CardMember>
         <CardMember username="Tomy" branch="">
         </CardMember>
         <CardMember username="Jota" branch="">
+          <PostgreSQLIcon className="w-12 h-16"/>
         </CardMember>
       </div>
     </div>
