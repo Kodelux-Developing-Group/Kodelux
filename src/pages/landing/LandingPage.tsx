@@ -3,12 +3,13 @@ import styles from "../../components/layout/styles/navbar.module.css"
 import ScrollToTop from '../../components/common/ScrollToTop'
 import { ProjectCard } from "@/components/common/ProjectCard"
 import { CardMember } from "@/components/common/CardMember"
+import ProjectsScrollX from '../../components/common/ProjectsScrollX'
 
 
 export const LandingPage = () => {
   return (
     <>
-    <div className="w-screen h-screen bg-[#101010] mb-96">
+    <div className="w-screen h-screen bg-[#101010] mb-96 select-none">
       <div className="flex flex-col items-center h-full justify-center">
         <img src="src/assets/images/kodelux.svg" alt="Kodelux Logo"/>
         <h1 className={`${styles.julius} text-6xl mt-10 text-white `}>
@@ -18,16 +19,65 @@ export const LandingPage = () => {
       </div>
     </div>
     <div id="projects" className="h-screen bg-amber-900 flex items-center justify-center">
-      <div className="h-8/12 w-full shadow-2xl shadow-black bg-amber-300 flex items-center justify-center">
-        <ProjectCard name="Sample Text" imageUrl="src\assets\images\Escultura.png" link="">
-          <NodeJSIcon></NodeJSIcon>
-          <NodeJSIcon></NodeJSIcon>
-          <NodeJSIcon></NodeJSIcon>
-          <NodeJSIcon></NodeJSIcon>
-          <NodeJSIcon></NodeJSIcon>
-          <NodeJSIcon></NodeJSIcon>
-          <NodeJSIcon></NodeJSIcon>
-        </ProjectCard>
+      <div className="h-8/12 w-full shadow-2xl shadow-black bg-amber-300 flex items-center justify-center select-none relative">
+        <ProjectsScrollX>
+          <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="https://www.google.com">
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+          </ProjectCard>
+          <ProjectCard name="Sample Text" imageUrl="" link="">
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+          </ProjectCard>
+          <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+          </ProjectCard>
+          <ProjectCard name="Sample Text" imageUrl="" link="">
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+          </ProjectCard>
+          <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+          </ProjectCard>
+          <ProjectCard name="Sample Text" imageUrl="" link="">
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+          </ProjectCard>
+          <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+          </ProjectCard>
+          <ProjectCard name="Sample Text" imageUrl="" link="">
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+          </ProjectCard>
+          <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+          </ProjectCard>
+          <ProjectCard name="Sample Text" imageUrl="" link="">
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+          </ProjectCard>
+          <ProjectCard name="Sample Text" imageUrl="src\\assets\\\\.png" link="">
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+            <NodeJSIcon/>
+          </ProjectCard>
+
+        </ProjectsScrollX>
       </div>
     </div>
     <div className=" h-screen flex flex-col items-center gap-6 justify-center mb-96">
@@ -76,13 +126,12 @@ export const LandingPage = () => {
           <TailWindCSSIcon className="w-12"/>
           <ReactIcon className="w-12 h-12"/>
           <BootstrapIcon className="w-12 h-12"/>
-          <TailWindCSSIcon className="w-12"/>
           <NodeJSIcon className="w-12 h-14"/>
           <SQLServerIcon className="w-12 h-12"/>
         </CardMember>
         <CardMember username="Tomy" branch="">
         </CardMember>
-        <CardMember username="Jota" branch="">
+        <CardMember username="Jota" branch="Back-end Developer">
           <PostgreSQLIcon className="w-12 h-16"/>
         </CardMember>
       </div>
