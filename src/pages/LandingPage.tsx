@@ -1,9 +1,9 @@
 import { BootstrapIcon, DartIcon, DotNetIcon, EmailIcon, ExpressIcon, FlutterIcon, InstagramIcon, MySQLIcon, NestJSIcon, NodeJSIcon, PostgreSQLIcon, ReactIcon, SQLServerIcon, TailWindCSSIcon, TypescriptIcon, ViteIcon } from "@/assets/icons/icons"
-import styles from "../../components/layout/styles/navbar.module.css"
-import ScrollToTop from '../../components/common/ScrollToTop'
+import styles from "../components/layout/styles/navbar.module.css"
+import ScrollToTop from '../components/common/ScrollToTop'
 import { ProjectCard } from "@/components/common/ProjectCard"
 import { CardMember } from "@/components/common/CardMember"
-import ProjectsScrollX from '../../components/common/ProjectsScrollX'
+import ProjectsScrollX from '../components/common/ProjectsScrollX'
 
 
 export const LandingPage = () => {
@@ -12,23 +12,28 @@ export const LandingPage = () => {
     <div className="w-screen h-screen bg-[#101010] mb-96 select-none">
       <div className="flex flex-col items-center h-full justify-center">
         <img src="src/assets/images/kodelux.svg" alt="Kodelux Logo"/>
-        <h1 className={`${styles.julius} text-6xl mt-10 text-white `}>
+        <h1 className={`${styles.julius} text-6xl mt-10 text-white`}>
           Kodelux
         </h1>
-
       </div>
     </div>
     <div className="w-1 h-[18rem]"></div>
     <div id="projects" className="h-screen w-screen flex flex-col items-center justify-center relative">
       <h2 className={`text-7xl mx-auto text-black ${styles.julius} stroke-text`}>Projects</h2>
       <div className="w-9/12 h-1 bg-gradient-to-r from-transparent via-[#ffd700] to-transparent my-4 rounded-full"/>
-        <div className="h-8/12 min-w-screen flex items-center select-none relative px-16" >
+      
+      <div className="w-9/12  2xl:h-1 2xl:hidden bg-gradient-to-r from-transparent via-[#ffd700] to-transparent my-4 rounded-full"/>
+        <div className="2xl:h-7/12 sm:h-auto  min-w-screen 2xl:flex items-center select-none relative px-16">
           <ProjectsScrollX>
-            <div className="flex flex-row justify-center items-center gap-4">
+            <div className="sm:flex-col sm:gap-0 flex 2xl:flex-row justify-center items-center sm:gap-y-4 2xl:gap-8">
               <ProjectCard imageUrl="" link="https://www.google.com">
               </ProjectCard>
               <ProjectCard imageUrl="" link="https://www.google.com">
               </ProjectCard>
+              <ProjectCard imageUrl="" link="https://www.google.com">
+              </ProjectCard>
+            </div>
+            <div className="sm:flex-col sm:gap-0 flex 2xl:flex-row justify-center items-center sm:gap-y-4 2xl:gap-8">
               <ProjectCard imageUrl="" link="https://www.google.com">
               </ProjectCard>
             </div>
@@ -37,8 +42,9 @@ export const LandingPage = () => {
         <div className="w-9/12 h-1 bg-gradient-to-r from-transparent via-[#ffd700] to-transparent my-4 rounded-full"/>
       </div>
       <div className="w-1 h-28"/>
-    <div className=" h-screen flex flex-col items-center gap-6 justify-center mb-96">
-      <div className="flex gap-10">
+    <div className="2xl:h-screen w-fit mx-auto sm:h-fit flex flex-col items-center gap-6 justify-center mb-96">
+      <div className="2xl:flex flex flex-row flex-wrap 2xl:gap-10 sm:grid 
+      sm:grid-cols-2 sm:mt-96 sm:gap-10 sm:place-items-center justify-center">
       <CardMember username="Joe" branch="Full-Stack Developer">
         <NodeJSIcon className="w-12 h-14"/>
         <TypescriptIcon className="w-12 h-12"/>
@@ -74,8 +80,6 @@ export const LandingPage = () => {
         <PostgreSQLIcon className="w-12 h-16"/>
         <ExpressIcon className="w-12 h-12"/>
       </CardMember>
-      </div>
-      <div className="flex gap-18">
         <CardMember username="Mortem" branch="Full-Stack Developer">
           <NodeJSIcon className="w-12 h-14"/>
           <MySQLIcon className="w-24 h-12"/>
@@ -93,11 +97,11 @@ export const LandingPage = () => {
         </CardMember>
       </div>
     </div>
-    <div className="h-96"></div>
-    <div className="h-10"></div>
+    <div className="2xl:h-96"></div>
+    <div className="2xl:h-10"></div>
     <ScrollToTop/>
     <footer id="contact" className="w-screen">
-      <div className="flex flex-row gap-x-16 justify-end mr-28 mb-20">
+      <div className="flex flex-row gap-x-16 justify-end mr-28 mb-20 sm:mr-14">
         <a href={`mailto:kodelux.ofc@gmail.com`} rel="noopener noreferrer">
           <EmailIcon className="w-14"></EmailIcon>
         </a>

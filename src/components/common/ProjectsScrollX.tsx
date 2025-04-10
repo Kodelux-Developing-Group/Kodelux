@@ -21,7 +21,7 @@ export default function ProjectsScrollX ({ children } : ProjectsScrollXProp) {
     }, [currentPage])
 
     return (
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full 2xl:overflow-hidden">
             <div ref={carouselRef}
                 className="flex transition-transform duration-500 ease-in-out" style={{ width: `${totalPages * 100}%` }}>
 
@@ -32,10 +32,16 @@ export default function ProjectsScrollX ({ children } : ProjectsScrollXProp) {
                 ))}
             </div>
             
-            <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-2 pb-4">
+            <div className="absolute bottom-0 left-0 right-0 2xl:flex sm:hidden justify-center gap-2 pb-4">
                 {childrenArray.length >= 2 && childrenArray.map((_, idx) => (
                     <button key={idx} onClick={() => setCurrentPage(idx)} 
-                        className={`h-2 rounded-full transition-all ${currentPage === idx ? 'w-6 bg-[#2C2C2C]' : 'w-2 bg-[#2C2C2C]/50'}`}/>
+                        className={`h-2 rounded-full transition-all cursor-pointer ${currentPage === idx ? 'w-6 bg-[#2C2C2C]' : 'w-2 bg-[#2C2C2C]/50'}`}/>
+                ))}
+            </div>
+            <div className="absolute -bottom-30 left-0 right-0 sm:flex 2xl:hidden justify-center gap-2 pb-4">
+                {childrenArray.length >= 2 && childrenArray.map((_, idx) => (
+                    <button key={idx} onClick={() => setCurrentPage(idx)} 
+                        className={`h-14 rounded-full mt-4 transition-all cursor-pointer ${currentPage === idx ? 'w-14 bg-[#2C2C2C]' : 'w-10 bg-[#2C2C2C]/50'}`}/>
                 ))}
             </div>
         </div>

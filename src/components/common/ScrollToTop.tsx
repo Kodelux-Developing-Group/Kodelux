@@ -23,7 +23,7 @@ export default function ScrollToTop() {
   return (
     <>
       {showButton && (
-        <div className='w-screen flex justify-center'>
+        <div className='sm:hidden lg:flex w-screen flex justify-center'>
           <button
           onClick={scrollToTop}
           className="fixed bottom-62 right-1/2 rounded-full shadow-2xl shadow-black cursor-pointer">

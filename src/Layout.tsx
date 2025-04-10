@@ -1,7 +1,5 @@
-import { Navbar } from "./components/layout";
-import { Outlet } from "react-router-dom";
-import "./styles/globals.css";
-import "./styles/layout.css";
+import { Navbar } from "./components/layout"
+import { Outlet } from "react-router-dom"
 
 const Layout = () => {
   return (
@@ -14,4 +12,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default Layout
