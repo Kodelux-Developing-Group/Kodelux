@@ -24,12 +24,12 @@ export const Navbar = () => {
           <div className="flex-1 bg-black/30"
             onClick={() => setIsOpen(false)}/>
 
-          <div className="md:w-1/6 max-w-xs bg-black h-full shadow-lg transition-transform duration-300 ease-in-out translate-x-0">
-            <div className="p-8 flex flex-col gap-6 items-end">
-              <a href="#projects" className={`text-[#FFD500] mx-auto font-semibold text-sm inline-block ${styles.julius}`}>
+          <div className="sm:w-3/6 max-w-xs bg-black h-full shadow-lg transition-transform duration-300 ease-in-out translate-x-0">
+            <div className="p-8 flex flex-col gap-6 sm:gap-10 items-end">
+              <a href="#projects" className={`text-[#FFD500] mx-auto font-semibold sm:text-4xl text-sm inline-block ${styles.julius}`}>
                 Projects
               </a>
-              <a href="#contact" className={`text-[#FFD500] mx-auto font-semibold text-sm inline-block ${styles.julius}`}>
+              <a href="#contact" className={`text-[#FFD500] mx-auto font-semibold sm:text-4xl text-sm inline-block ${styles.julius}`}>
                 Contact
               </a>
             </div>

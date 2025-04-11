@@ -34,3 +34,115 @@ html {
 ::-webkit-scrollbar {
     width: 0;
 }  
+
+@media (width < 1000px) {
+    .hidden-xs {
+        display: none;
+    }
+    .show-xs {
+        display: flex;
+    }
+    .social-networks-styles {
+        margin-inline: auto;
+        justify-items: center;
+        column-gap: 0;
+        width: fit-content;
+        flex: content;
+    }
+    .member-cards {
+        row-gap: 1rem;
+    }
+    .project-cards {
+        width: 25rem;
+        height: 12rem;
+        background-color: color-mix(in oklab, var(--color-black) /* #000 = #000000 */ 50%, transparent);
+    }
+    .h0 {
+        height: 0%;
+    }
+    .h100 {
+        height: 100%;
+    }
+    .flexcolumn {
+        flex-direction: column;
+    }
+    .transparent50 {
+        --tw-brightness: brightness(50%);
+            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+    }
+    .opacity100 {
+        opacity: 100%;
+    }
+    .text-project-card {
+        font-size: var(--text-4xl);
+        line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+    .gap-projects {
+        gap: 1rem;
+    }
+    .width {
+        width: 70vw;
+    }
+}
+
+@media (width > 1000px) and (width < 1536px) {
+    .hidden-xs {
+        display: none;
+    }
+    .show-xs {
+        display: flex;
+    }
+    .social-networks-styles {
+        margin-inline: auto;
+        justify-items: center;
+        column-gap: 0;
+        width: fit-content;
+        flex: content;
+    }
+    .member-cards {
+        row-gap: 1rem;
+    }
+    .project-cards {
+        width: 27rem;
+        height: 15rem;
+        background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
+    }
+    .h0 {
+        height: 0%;
+    }
+    .h100 {
+        height: 100%;
+    }
+    .text-project-card {
+        font-size: var(--text-4xl);
+        line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+    .flex-div-projects {
+        gap: 1rem;
+    }
+    .h70 {
+        height: 70%;
+    }
+    .h40 {
+        height: 60%;
+    }
+    .pages {
+        bottom: calc(var(--spacing) * 25)
+    }
+}
+
+@media (width < 1023px) and (width < 1536px) {
+    .hidden1023 {
+        display: none;
+    }
+    .show1023 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (width < 576px) {
+    .m1 {
+        row-gap: 1rem;
+    }
+}

@@ -9,7 +9,7 @@ import ProjectsScrollX from '../components/common/ProjectsScrollX'
 export const LandingPage = () => {
   return (
     <>
-    <div className="w-screen h-screen bg-[#101010] mb-96 select-none">
+    <div className="w-screen min-h-screen h-screen bg-[#101010] mb-96 select-none">
       <div className="flex flex-col items-center h-full justify-center">
         <img src="src/assets/images/kodelux.svg" alt="Kodelux Logo"/>
         <h1 className={`${styles.julius} text-6xl mt-10 text-white`}>
@@ -21,20 +21,13 @@ export const LandingPage = () => {
     <div id="projects" className="h-screen w-screen flex flex-col items-center justify-center relative">
       <h2 className={`text-7xl mx-auto text-black ${styles.julius} stroke-text`}>Projects</h2>
       <div className="w-9/12 h-1 bg-gradient-to-r from-transparent via-[#ffd700] to-transparent my-4 rounded-full"/>
-      
-      <div className="w-9/12  2xl:h-1 2xl:hidden bg-gradient-to-r from-transparent via-[#ffd700] to-transparent my-4 rounded-full"/>
-        <div className="2xl:h-7/12 sm:h-auto  min-w-screen 2xl:flex items-center select-none relative px-16">
+        <div className="2xl:h-7/12 sm:h-auto h40 min-w-screen 2xl:flex items-center select-none relative px-16">
           <ProjectsScrollX>
-            <div className="sm:flex-col sm:gap-0 flex 2xl:flex-row justify-center items-center sm:gap-y-4 2xl:gap-8">
+            <div className="sm:flex-col h70 flex-div-projects sm:gap-0 flex 2xl:flex-row gap-projects flexcolumn justify-center items-center sm:gap-y-4 2xl:gap-8">
               <ProjectCard imageUrl="" link="https://www.google.com">
-              </ProjectCard>
-              <ProjectCard imageUrl="" link="https://www.google.com">
-              </ProjectCard>
-              <ProjectCard imageUrl="" link="https://www.google.com">
-              </ProjectCard>
-            </div>
-            <div className="sm:flex-col sm:gap-0 flex 2xl:flex-row justify-center items-center sm:gap-y-4 2xl:gap-8">
-              <ProjectCard imageUrl="" link="https://www.google.com">
+                <NodeJSIcon></NodeJSIcon>
+                <NodeJSIcon></NodeJSIcon>
+                <NodeJSIcon></NodeJSIcon>
               </ProjectCard>
             </div>
           </ProjectsScrollX>
@@ -43,7 +36,7 @@ export const LandingPage = () => {
       </div>
       <div className="w-1 h-28"/>
     <div className="2xl:h-screen w-fit mx-auto sm:h-fit flex flex-col items-center gap-6 justify-center mb-96">
-      <div className="2xl:flex flex flex-row flex-wrap 2xl:gap-10 sm:grid 
+      <div className="2xl:flex m1 flex flex-row flex-wrap 2xl:gap-10 sm:grid 
       sm:grid-cols-2 sm:mt-96 sm:gap-10 sm:place-items-center justify-center">
       <CardMember username="Joe" branch="Full-Stack Developer">
         <NodeJSIcon className="w-12 h-14"/>
@@ -90,10 +83,10 @@ export const LandingPage = () => {
           <SQLServerIcon className="w-12 h-12"/>
           <DotNetIcon className="w-12 h-4 mt-6"/>
         </CardMember>
-        <CardMember username="Tomy" branch="">
-        </CardMember>
         <CardMember username="Jota" branch="Back-end Developer">
           <PostgreSQLIcon className="w-12 h-16"/>
+        </CardMember>
+        <CardMember username="Tomy" branch="">
         </CardMember>
       </div>
     </div>
@@ -102,12 +95,15 @@ export const LandingPage = () => {
     <ScrollToTop/>
     <footer id="contact" className="w-screen">
       <div className="flex flex-row gap-x-16 justify-end mr-28 mb-20 sm:mr-14">
-        <a href={`mailto:kodelux.ofc@gmail.com`} rel="noopener noreferrer">
+        <a href={`mailto:kodelux.ofc@gmail.com`} 
+        rel="noopener noreferrer" 
+        className="">
           <EmailIcon className="w-14"></EmailIcon>
         </a>
         <a href="https://www.instagram.com/kodelux_team/"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+          className="">
           <InstagramIcon className="w-14"/>
         </a>
       </div>
