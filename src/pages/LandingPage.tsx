@@ -19,7 +19,7 @@ export const LandingPage = () => {
     </div>
     <div className="w-1 h-[18rem]"></div>
     <div id="projects" className="h-screen w-screen flex flex-col items-center justify-center relative">
-      <h2 className={`text-7xl mx-auto text-black ${styles.julius} stroke-text`}>Projects</h2>
+      <h2 className={`text-7xl mx-auto text-black ${styles.julius} stroke-text select-none`}>Projects</h2>
       <div className="w-9/12 h-1 bg-gradient-to-r from-transparent via-[#ffd700] to-transparent my-4 rounded-full"/>
         <div className="2xl:h-7/12 min-w-screen 2xl:flex items-center select-none relative px-16">
           <ProjectsScrollX>
@@ -34,57 +34,7 @@ export const LandingPage = () => {
                 <DockerIcon className="w-12 h-12"/>
                 <NextIcon className="w-10 h-10"/>
               </ProjectCard>
-              <ProjectCard name="PaniMarket" imageUrl="panimarket_kodelux.png" link="">
-                <NodeJSIcon className="w-12 h-12"/>
-                <TypescriptIcon className="w-12 h-12"/>
-                <PostgreSQLIcon  className="w-12 h-12"/>
-                <ReactIcon className="w-12 h-12"/>
-                <ViteIcon className="w-12 h-12"/>
-                <TailWindCSSIcon className="w-12"/>
-                <DockerIcon className="w-12 h-12"/>
-                <NextIcon className="w-10 h-10"/>
-              </ProjectCard>
-              <ProjectCard name="PaniMarket" imageUrl="panimarket_kodelux.png" link="">
-                <NodeJSIcon className="w-12 h-12"/>
-                <TypescriptIcon className="w-12 h-12"/>
-                <PostgreSQLIcon  className="w-12 h-12"/>
-                <ReactIcon className="w-12 h-12"/>
-                <ViteIcon className="w-12 h-12"/>
-                <TailWindCSSIcon className="w-12"/>
-                <DockerIcon className="w-12 h-12"/>
-                <NextIcon className="w-10 h-10"/>
-              </ProjectCard>
-            </div>
-            <div className="sm:flex-col flex-div-projects sm:gap-0 flex 2xl:flex-row gap-projects flex-col justify-center items-center sm:gap-y-4 2xl:gap-8">
-              <ProjectCard name="PaniMarket" imageUrl="panimarket_kodelux.png" link="">
-                <NodeJSIcon className="w-12 h-12"/>
-                <TypescriptIcon className="w-12 h-12"/>
-                <PostgreSQLIcon  className="w-12 h-12"/>
-                <ReactIcon className="w-12 h-12"/>
-                <ViteIcon className="w-12 h-12"/>
-                <TailWindCSSIcon className="w-12"/>
-                <DockerIcon className="w-12 h-12"/>
-                <NextIcon className="w-10 h-10"/>
-              </ProjectCard>
-              <ProjectCard name="PaniMarket" imageUrl="panimarket_kodelux.png" link="">
-                <NodeJSIcon className="w-12 h-12"/>
-                <TypescriptIcon className="w-12 h-12"/>
-                <PostgreSQLIcon  className="w-12 h-12"/>
-                <ReactIcon className="w-12 h-12"/>
-                <ViteIcon className="w-12 h-12"/>
-                <TailWindCSSIcon className="w-12"/>
-                <DockerIcon className="w-12 h-12"/>
-                <NextIcon className="w-10 h-10"/>
-              </ProjectCard>
-              <ProjectCard name="PaniMarket" imageUrl="panimarket_kodelux.png" link="">
-                <NodeJSIcon className="w-12 h-12"/>
-                <TypescriptIcon className="w-12 h-12"/>
-                <PostgreSQLIcon  className="w-12 h-12"/>
-                <ReactIcon className="w-12 h-12"/>
-                <ViteIcon className="w-12 h-12"/>
-                <TailWindCSSIcon className="w-12"/>
-                <DockerIcon className="w-12 h-12"/>
-                <NextIcon className="w-10 h-10"/>
+              <ProjectCard  imageUrl="" link="">
               </ProjectCard>
             </div>
           </ProjectsScrollX>
@@ -93,8 +43,8 @@ export const LandingPage = () => {
       </div>
       <div className="w-1 h-28"/>
     <div className="2xl:h-screen w-fit mx-auto sm:h-fit flex flex-col items-center gap-6 justify-center mb-96">
-      <div className="2xl:flex m1 flex flex-row flex-wrap 2xl:gap-10 sm:grid 
-        sm:grid-cols-2 sm:mt-96 sm:gap-10 sm:place-items-center justify-center">
+      <div className="2xl:flex m1 flex flex-row flex-wrap 2xl:gap-10 md:grid 
+        md:grid-cols-2 sm:mt-96 sm:gap-5 sm:place-items-center justify-center member-cards">
       <CardMember username="Méndez" branch="Back-end Developer">
         <NodeJSIcon className="w-12 h-14"/>
         <TypescriptIcon className="w-12 h-12"/>
@@ -147,9 +97,11 @@ export const LandingPage = () => {
     </div>
     <div className="2xl:h-96"></div>
     <div className="2xl:h-10"></div>
-    <ScrollToTop/>
+    <div className="relative mx-auto w-fit">
+      <ScrollToTop/>
+    </div>
     <footer id="contact" className="w-screen">
-      <div className="flex flex-row gap-x-16 justify-end mr-28 mb-20 sm:mr-14">
+      <div className="social-networks">
         <a href={`mailto:kodelux.ofc@gmail.com`} 
         rel="noopener noreferrer" 
         className="">
@@ -163,7 +115,7 @@ export const LandingPage = () => {
         </a>
       </div>
       <div className="mx-auto w-fit">
-        <span className="text-[#E0E0E0] hover:text-black transition">© Copyright Kodelux. All Rights Reserved</span>
+        <span className="text-[#E0E0E0] hover:text-black transition copy-text">© Copyright Kodelux. All Rights Reserved</span>
       </div>
     </footer>
     </>
