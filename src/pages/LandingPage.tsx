@@ -1,4 +1,4 @@
-import { BootstrapIcon, DartIcon, DotNetIcon, EmailIcon, ExpressIcon, FlutterIcon, InstagramIcon, MySQLIcon, NestJSIcon, NodeJSIcon, PostgreSQLIcon, ReactIcon, SQLServerIcon, TailWindCSSIcon, TypescriptIcon, ViteIcon } from "@/assets/icons/icons"
+import { BootstrapIcon, DartIcon, DockerIcon, DotNetIcon, EmailIcon, ExpressIcon, FlutterIcon, InstagramIcon, MySQLIcon, NestJSIcon, NextIcon, NodeJSIcon, PostgreSQLIcon, ReactIcon, SQLServerIcon, TailWindCSSIcon, TypescriptIcon, ViteIcon } from "@/assets/icons/icons"
 import styles from "../components/layout/styles/navbar.module.css"
 import ScrollToTop from '../components/common/ScrollToTop'
 import { ProjectCard } from "@/components/common/ProjectCard"
@@ -21,13 +21,70 @@ export const LandingPage = () => {
     <div id="projects" className="h-screen w-screen flex flex-col items-center justify-center relative">
       <h2 className={`text-7xl mx-auto text-black ${styles.julius} stroke-text`}>Projects</h2>
       <div className="w-9/12 h-1 bg-gradient-to-r from-transparent via-[#ffd700] to-transparent my-4 rounded-full"/>
-        <div className="2xl:h-7/12 sm:h-auto h40 min-w-screen 2xl:flex items-center select-none relative px-16">
+        <div className="2xl:h-7/12 min-w-screen 2xl:flex items-center select-none relative px-16">
           <ProjectsScrollX>
-            <div className="sm:flex-col h70 flex-div-projects sm:gap-0 flex 2xl:flex-row gap-projects flexcolumn justify-center items-center sm:gap-y-4 2xl:gap-8">
-              <ProjectCard imageUrl="" link="https://www.google.com">
-                <NodeJSIcon></NodeJSIcon>
-                <NodeJSIcon></NodeJSIcon>
-                <NodeJSIcon></NodeJSIcon>
+            <div className="sm:flex-col flex-div-projects sm:gap-0 flex 2xl:flex-row gap-projects flex-col justify-center items-center sm:gap-y-4 2xl:gap-8">
+              <ProjectCard name="PaniMarket" imageUrl="panimarket_kodelux.png" link="">
+                <NodeJSIcon className="w-12 h-12"/>
+                <TypescriptIcon className="w-12 h-12"/>
+                <PostgreSQLIcon  className="w-12 h-12"/>
+                <ReactIcon className="w-12 h-12"/>
+                <ViteIcon className="w-12 h-12"/>
+                <TailWindCSSIcon className="w-12"/>
+                <DockerIcon className="w-12 h-12"/>
+                <NextIcon className="w-10 h-10"/>
+              </ProjectCard>
+              <ProjectCard name="PaniMarket" imageUrl="panimarket_kodelux.png" link="">
+                <NodeJSIcon className="w-12 h-12"/>
+                <TypescriptIcon className="w-12 h-12"/>
+                <PostgreSQLIcon  className="w-12 h-12"/>
+                <ReactIcon className="w-12 h-12"/>
+                <ViteIcon className="w-12 h-12"/>
+                <TailWindCSSIcon className="w-12"/>
+                <DockerIcon className="w-12 h-12"/>
+                <NextIcon className="w-10 h-10"/>
+              </ProjectCard>
+              <ProjectCard name="PaniMarket" imageUrl="panimarket_kodelux.png" link="">
+                <NodeJSIcon className="w-12 h-12"/>
+                <TypescriptIcon className="w-12 h-12"/>
+                <PostgreSQLIcon  className="w-12 h-12"/>
+                <ReactIcon className="w-12 h-12"/>
+                <ViteIcon className="w-12 h-12"/>
+                <TailWindCSSIcon className="w-12"/>
+                <DockerIcon className="w-12 h-12"/>
+                <NextIcon className="w-10 h-10"/>
+              </ProjectCard>
+            </div>
+            <div className="sm:flex-col flex-div-projects sm:gap-0 flex 2xl:flex-row gap-projects flex-col justify-center items-center sm:gap-y-4 2xl:gap-8">
+              <ProjectCard name="PaniMarket" imageUrl="panimarket_kodelux.png" link="">
+                <NodeJSIcon className="w-12 h-12"/>
+                <TypescriptIcon className="w-12 h-12"/>
+                <PostgreSQLIcon  className="w-12 h-12"/>
+                <ReactIcon className="w-12 h-12"/>
+                <ViteIcon className="w-12 h-12"/>
+                <TailWindCSSIcon className="w-12"/>
+                <DockerIcon className="w-12 h-12"/>
+                <NextIcon className="w-10 h-10"/>
+              </ProjectCard>
+              <ProjectCard name="PaniMarket" imageUrl="panimarket_kodelux.png" link="">
+                <NodeJSIcon className="w-12 h-12"/>
+                <TypescriptIcon className="w-12 h-12"/>
+                <PostgreSQLIcon  className="w-12 h-12"/>
+                <ReactIcon className="w-12 h-12"/>
+                <ViteIcon className="w-12 h-12"/>
+                <TailWindCSSIcon className="w-12"/>
+                <DockerIcon className="w-12 h-12"/>
+                <NextIcon className="w-10 h-10"/>
+              </ProjectCard>
+              <ProjectCard name="PaniMarket" imageUrl="panimarket_kodelux.png" link="">
+                <NodeJSIcon className="w-12 h-12"/>
+                <TypescriptIcon className="w-12 h-12"/>
+                <PostgreSQLIcon  className="w-12 h-12"/>
+                <ReactIcon className="w-12 h-12"/>
+                <ViteIcon className="w-12 h-12"/>
+                <TailWindCSSIcon className="w-12"/>
+                <DockerIcon className="w-12 h-12"/>
+                <NextIcon className="w-10 h-10"/>
               </ProjectCard>
             </div>
           </ProjectsScrollX>
@@ -37,17 +94,7 @@ export const LandingPage = () => {
       <div className="w-1 h-28"/>
     <div className="2xl:h-screen w-fit mx-auto sm:h-fit flex flex-col items-center gap-6 justify-center mb-96">
       <div className="2xl:flex m1 flex flex-row flex-wrap 2xl:gap-10 sm:grid 
-      sm:grid-cols-2 sm:mt-96 sm:gap-10 sm:place-items-center justify-center">
-      <CardMember username="Joe" branch="Full-Stack Developer">
-        <NodeJSIcon className="w-12 h-14"/>
-        <TypescriptIcon className="w-12 h-12"/>
-        <ReactIcon className="w-12 h-12"/>
-        <ViteIcon className="w-12 h-12"/>
-        <TailWindCSSIcon className="w-12"/>
-        <MySQLIcon className="w-24 h-12"/>
-        <ExpressIcon className="w-12 h-12"/>
-        <NestJSIcon className="w-12 h-12"/>
-      </CardMember>
+        sm:grid-cols-2 sm:mt-96 sm:gap-10 sm:place-items-center justify-center">
       <CardMember username="Méndez" branch="Back-end Developer">
         <NodeJSIcon className="w-12 h-14"/>
         <TypescriptIcon className="w-12 h-12"/>
@@ -62,6 +109,7 @@ export const LandingPage = () => {
         <ReactIcon className="w-12 h-12"/>
         <ViteIcon className="w-12 h-12"/>
         <ExpressIcon className="w-12 h-12"/>
+        <TailWindCSSIcon className="w-12"/>
       </CardMember>
       <CardMember username="Cube" branch="Full-Stack Developer">
         <NodeJSIcon className="w-12 h-14"/>
@@ -72,6 +120,7 @@ export const LandingPage = () => {
         <MySQLIcon className="w-24 h-12"/>
         <PostgreSQLIcon className="w-12 h-16"/>
         <ExpressIcon className="w-12 h-12"/>
+        <DockerIcon className="w-12 h-12"/>
       </CardMember>
         <CardMember username="Mortem" branch="Full-Stack Developer">
           <NodeJSIcon className="w-12 h-14"/>
@@ -82,11 +131,17 @@ export const LandingPage = () => {
           <BootstrapIcon className="w-12 h-12"/>
           <SQLServerIcon className="w-12 h-12"/>
           <DotNetIcon className="w-12 h-4 mt-6"/>
+          <DockerIcon className="w-12 h-12"/>
         </CardMember>
-        <CardMember username="Jota" branch="Back-end Developer">
+        <CardMember username="Json" branch="Back-end Developer">
+          <NodeJSIcon className="w-12 h-14"/>
+          <TypescriptIcon className="w-12 h-12"/>
+          <ReactIcon className="w-12 h-12"/>
           <PostgreSQLIcon className="w-12 h-16"/>
+          <MySQLIcon className="w-24 h-12"/>
+          <DockerIcon className="w-12 h-12"/>
         </CardMember>
-        <CardMember username="Tomy" branch="">
+        <CardMember>
         </CardMember>
       </div>
     </div>

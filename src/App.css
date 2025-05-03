@@ -35,7 +35,7 @@ html {
     width: 0;
 }  
 
-@media (width < 1000px) {
+@media (width <= 1000px) {
     .hidden-xs {
         display: none;
     }
@@ -53,9 +53,9 @@ html {
         row-gap: 1rem;
     }
     .project-cards {
-        width: 25rem;
-        height: 12rem;
-        background-color: color-mix(in oklab, var(--color-black) /* #000 = #000000 */ 50%, transparent);
+        width: 20rem;
+        height: 8rem;
+        background-color: color-mix(in oklab, var(--color-black) #000 = #000000 50%, transparent);
     }
     .h0 {
         height: 0%;
@@ -83,6 +83,12 @@ html {
     .width {
         width: 70vw;
     }
+    .div-projects {
+        height: 60rem;
+    }
+    .button-pages {
+        bottom: calc(var(--spacing) * -28);
+    }
 }
 
 @media (width > 1000px) and (width < 1536px) {
@@ -104,7 +110,7 @@ html {
     }
     .project-cards {
         width: 27rem;
-        height: 15rem;
+        height: 11rem;
         background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
     }
     .h0 {
@@ -120,6 +126,9 @@ html {
     .flex-div-projects {
         gap: 1rem;
     }
+    .div-projects {
+        height: 68rem;
+    }
     .h70 {
         height: 70%;
     }
@@ -128,6 +137,9 @@ html {
     }
     .pages {
         bottom: calc(var(--spacing) * 25)
+    }
+    .button-pages {
+        bottom: calc(var(--spacing) * -30);
     }
 }
 
@@ -145,4 +157,4 @@ html {
     .m1 {
         row-gap: 1rem;
     }
-}
+} 

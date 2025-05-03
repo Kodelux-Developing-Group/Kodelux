@@ -38,7 +38,7 @@ export default function ProjectsScrollX ({ children } : ProjectsScrollXProp) {
                         className={`h-2 rounded-full transition-all cursor-pointer ${currentPage === idx ? 'w-6 bg-[#2C2C2C]' : 'w-2 bg-[#2C2C2C]/50'}`}/>
                 ))}
             </div>
-            <div className="absolute pages -bottom-30 left-0 right-0 show-xs sm:flex 2xl:hidden justify-center gap-2 pb-4">
+            <div className="absolute pages button-pages left-0 right-0 show-xs sm:flex 2xl:hidden justify-center gap-2 pb-4">
                 {childrenArray.length >= 2 && childrenArray.map((_, idx) => (
                     <button key={idx} onClick={() => setCurrentPage(idx)} 
                         className={`h-14 rounded-full mt-4 transition-all cursor-pointer ${currentPage === idx ? 'w-14 bg-[#2C2C2C]' : 'w-10 bg-[#2C2C2C]/50'}`}/>

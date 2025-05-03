@@ -22,13 +22,13 @@ export const CardMember = ({ username, branch, children, className }: MemberProp
       </>
     ) : (
       <>
-        <div className={`bg-white flex-col w-96 h-60 rounded-4xl p-5 pl-8 shadow-2xl ${className}`}>
-          <span className="text-black font-bold text-4xl m-auto">Vacant</span>
-        </div>
-        <div className={`bg-white sm:basis-1/2 w-72 h-32 rounded-4xl p-5 pl-8 m-auto shadow-2xl flex items-center justify-center ${className}`}>
-          <span className="text-black font-bold text-4xl">Vacant</span>
-        </div>
-      </>
+      <div className={`bg-white hidden1023 flex items-center justify-center w-96 h-60 rounded-4xl p-5 pl-8 shadow-2xl ${className}`}>
+        <span className="text-black font-bold text-4xl">Vacant</span>
+      </div>
+      <div className={`bg-white show1023 sm:basis-1/2 sm:visible lg:hidden w-72 h-32 rounded-4xl p-5 pl-8 m-auto shadow-2xl flex items-center justify-center ${className}`}>
+        <span className="text-black font-bold text-4xl">Vacant</span>
+      </div>
+    </>
     )}
     </>
   )
