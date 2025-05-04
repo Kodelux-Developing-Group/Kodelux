@@ -10,7 +10,7 @@ export default function ProjectsScrollX ({ children } : ProjectsScrollXProp) {
     const [currentPage, setCurrentPage] = useState(0)
     const childrenArray = React.Children.toArray(children)
     const totalPages = childrenArray.length
-    const carouselRef = useRef(null)
+    const carouselRef = useRef<HTMLDivElement>(null)
 
     const move = 100 / childrenArray.length
     
