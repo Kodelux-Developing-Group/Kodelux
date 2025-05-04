@@ -4,17 +4,30 @@ import ScrollToTop from '../components/common/ScrollToTop'
 import { ProjectCard } from "@/components/common/ProjectCard"
 import { CardMember } from "@/components/common/CardMember"
 import ProjectsScrollX from '../components/common/ProjectsScrollX'
+import { GoldenText } from "@/components/common/GoldText"
+import { useState } from "react"
 
 
 export const LandingPage = () => {
+  const [isGoldenText, setGoldenText] = useState(false)
   return (
     <>
     <div className="w-screen min-h-screen h-screen bg-[#101010] mb-96 select-none">
       <div className="flex flex-col items-center h-full justify-center">
-        <img src="src/assets/images/kodelux.svg" alt="Kodelux Logo"/>
-        <h1 className={`${styles.julius} text-6xl mt-10 text-white`}>
-          Kodelux
-        </h1>
+        <button className="cursor-pointer" onClick={() => setGoldenText(!isGoldenText)}>
+          <img src="src/assets/images/kodelux.svg" alt="Kodelux Logo"/>
+        </button>
+        {isGoldenText ? (
+          <GoldenText>
+            <h1 className={`${styles.julius} text-6xl mt-10 text-white`}>
+              Kodelux
+            </h1>
+          </GoldenText>
+        ) : (
+            <h1 className={`${styles.julius} text-6xl mt-10 text-white`}>
+              Kodelux
+            </h1>
+        )}
       </div>
     </div>
     <div className="w-1 h-[18rem]"></div>
