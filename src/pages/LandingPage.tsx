@@ -1,11 +1,13 @@
-import { BootstrapIcon, DartIcon, DockerIcon, DotNetIcon, EmailIcon, ExpressIcon, FlutterIcon, InstagramIcon, MySQLIcon, NestJSIcon, NextIcon, NodeJSIcon, PostgreSQLIcon, ReactIcon, SQLServerIcon, TailWindCSSIcon, TypescriptIcon, ViteIcon } from "@/assets/icons/icons"
 import styles from "../components/layout/styles/navbar.module.css"
+import { useState } from "react"
+
+import { BootstrapIcon, DartIcon, DockerIcon, DotNetIcon, EmailIcon, ExpressIcon, FlutterIcon, InstagramIcon, MySQLIcon, NestJSIcon, NextIcon, NodeJSIcon, PostgreSQLIcon, ReactIcon, SQLServerIcon, TailWindCSSIcon, TypescriptIcon, ViteIcon } from "@/assets/icons/icons"
 import ScrollToTop from '../components/common/ScrollToTop'
 import { ProjectCard } from "@/components/common/ProjectCard"
 import { CardMember } from "@/components/common/CardMember"
 import ProjectsScrollX from '../components/common/ProjectsScrollX'
 import { GoldenText } from "@/components/common/GoldText"
-import { useState } from "react"
+import { KodeluxLogo, PaniMarketKodeluxLogo } from "@/assets/images"
 
 
 export const LandingPage = () => {
@@ -15,7 +17,7 @@ export const LandingPage = () => {
     <div className="w-screen min-h-screen h-screen bg-[#101010] mb-96 select-none">
       <div className="flex flex-col items-center h-full justify-center">
         <button className="cursor-pointer" onClick={() => setGoldenText(!isGoldenText)}>
-          <img src="src/assets/images/kodelux.svg" alt="Kodelux Logo"/>
+          <img src={KodeluxLogo} alt="Kodelux Logo"/>
         </button>
         {isGoldenText ? (
           <GoldenText>
@@ -37,7 +39,7 @@ export const LandingPage = () => {
         <div className="2xl:h-7/12 min-w-screen 2xl:flex items-center select-none relative px-16">
           <ProjectsScrollX>
             <div className="sm:flex-col flex-div-projects sm:gap-0 flex 2xl:flex-row gap-projects flex-col justify-center items-center sm:gap-y-4 2xl:gap-8">
-              <ProjectCard name="PaniMarket" imageUrl="panimarket_kodelux.png" link="">
+              <ProjectCard name="PaniMarket" imageUrl={PaniMarketKodeluxLogo} link="">
                 <NodeJSIcon className="w-12 h-12"/>
                 <TypescriptIcon className="w-12 h-12"/>
                 <PostgreSQLIcon  className="w-12 h-12"/>
@@ -52,7 +54,7 @@ export const LandingPage = () => {
               </ProjectCard>
             </div>
             <div className="sm:flex-col flex-div-projects sm:gap-0 flex 2xl:flex-row gap-projects flex-col justify-center items-center sm:gap-y-4 2xl:gap-8">
-              <ProjectCard name="PaniMarket" imageUrl="panimarket_kodelux.png" link="">
+              <ProjectCard name="PaniMarket" imageUrl={PaniMarketKodeluxLogo} link="">
                 <NodeJSIcon className="w-12 h-12"/>
                 <TypescriptIcon className="w-12 h-12"/>
                 <PostgreSQLIcon  className="w-12 h-12"/>
