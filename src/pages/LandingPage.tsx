@@ -50,23 +50,6 @@ export const LandingPage = () => {
               </ProjectCard>
               <ProjectCard  imageUrl="" link="">
               </ProjectCard>
-              <ProjectCard  imageUrl="" link="">
-              </ProjectCard>
-            </div>
-            <div className="sm:flex-col flex-div-projects sm:gap-0 flex 2xl:flex-row gap-projects flex-col justify-center items-center sm:gap-y-4 2xl:gap-8">
-              <ProjectCard name="PaniMarket" imageUrl={PaniMarketKodeluxLogo} link="">
-                <NodeJSIcon className="w-12 h-12"/>
-                <TypescriptIcon className="w-12 h-12"/>
-                <PostgreSQLIcon  className="w-12 h-12"/>
-                <NextIcon className="w-10 h-10"/>
-                <ReactIcon className="w-12 h-12"/>
-                <ViteIcon className="w-12 h-12"/>
-                <TailWindCSSIcon className="w-12"/>
-              </ProjectCard>
-              <ProjectCard  imageUrl="" link="">
-              </ProjectCard>
-              <ProjectCard  imageUrl="" link="">
-              </ProjectCard>
             </div>
           </ProjectsScrollX>
         </div>
