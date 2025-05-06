@@ -6,7 +6,7 @@ import { LandingPage } from "./pages/LandingPage";
 function App() {
   
   return (
-    <Router>
+    <Router basename="/Kodelux">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<LandingPage />} />
