@@ -91,7 +91,7 @@ export const Navbar = () => {
 				<div className="flex flex-col h-full">
 
 					<nav className="flex-1 overflow-y-auto">
-					<ul className={`flex flex-col  mx-auto font-semibold text-3xl ${styles.julius} items-center my-5 mt-10`}>
+					<ul className={`flex flex-col  mx-auto font-semibold text-3xl ${styles.julius} items-center my-5 mt-10 julius-font`}>
 						{menuItems.map((item, index) => (
 							<motion.li
 							key={index}

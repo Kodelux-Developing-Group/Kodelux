@@ -92,7 +92,8 @@ animation: slide-out 0.2s ease-out forwards;
     .project-cards {
         width: 20rem;
         height: 8rem;
-        background-color: color-mix(in oklab, var(--color-black) #000 = #000000 50%, transparent);
+        /* background-color: color-mix(in oklab, var(--color-black) #000 = #000000 50%);*/
+        background-color: rgba(0, 0, 0, 0.5);
     }
     .h0 {
         height: 0%;
@@ -148,7 +149,7 @@ animation: slide-out 0.2s ease-out forwards;
     .project-cards {
         width: 27rem;
         height: 11rem;
-        background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
+        /* background-color: color-mix(in oklab, var(--color-black) 50%, transparent); */
     }
     .h0 {
         height: 0%;
@@ -222,4 +223,9 @@ animation: slide-out 0.2s ease-out forwards;
     .copy-text {
         color: #888;
     }
+}
+
+
+.julius-font {
+    font-family: 'Julius Sans One', sans-serif;
 }

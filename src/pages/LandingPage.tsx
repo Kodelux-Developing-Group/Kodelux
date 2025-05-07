@@ -15,7 +15,7 @@ export const LandingPage = () => {
   return (
     <>
     <div className="w-screen min-h-screen h-screen bg-[#101010] mb-96 select-none">
-      <div className="flex flex-col items-center h-full justify-center">
+      <div className="flex flex-col items-center h-full justify-center julius-font">
         <button className="cursor-pointer" onClick={() => setGoldenText(!isGoldenText)}>
           <img src={KodeluxLogo} alt="Kodelux Logo"/>
         </button>
