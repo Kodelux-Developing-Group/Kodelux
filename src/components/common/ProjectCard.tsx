@@ -20,7 +20,7 @@ type ProjectCardProps = {
             <p className="text-white text-2xl font-semibold text-project-card">{name}</p>
           </div>
         </div>
-        <div className="hidden-xs h0 h-[40%] p-4 bg-[#2C2C2C] flex flex-row justify-center items-center flex-wrap [&>*]:mx-1">
+        <div className="h0 h-[40%] p-4 bg-[#2C2C2C] flex flex-row justify-center items-center flex-wrap [&>*]:mx-1">
           {children}
         </div>
         </a>

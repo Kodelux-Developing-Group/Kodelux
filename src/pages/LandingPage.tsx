@@ -109,8 +109,8 @@ export const LandingPage = () => {
         </CardMember>
       </div>
     </div>
-    <div className="2xl:h-96"></div>
-    <div className="2xl:h-10"></div>
+    <div className="h-96 space-members-social-media"></div>
+    <div className="xl:h-10"></div>
     <div className="relative mx-auto w-fit">
       <ScrollToTop/>
     </div>
